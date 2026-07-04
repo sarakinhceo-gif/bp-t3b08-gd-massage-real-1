@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>공덕 마사지 내돈내산 | 위치·가격·정보 한 방에 정리</title>
+    <meta name="description" content="공덕 마사지 내돈내산 정보 총정리. 주소, 가격표, 운영시간, 예약 팁까지. 광고 없는 진짜 데이터만 때려박았습니다. 전화 010-6279-0862">
+    <meta name="keywords" content="공덕 마사지 정보, 공덕 마사지 가격, 공덕 마사지 위치, 공덕 마사지 운영시간, 공덕 마사지 내돈내산 정보">
+    <link rel="canonical" href="https://t3b08-gd-massage-real-1.vercel.app/info">
+    <meta property="og:title" content="공덕 마사지 내돈내산 | 정보 총정리">
+    <meta property="og:description" content="공덕 마사지 내돈내산 정보 총정리. 주소, 가격표, 운영시간, 예약 팁까지. 광고 없는 진짜 데이터만 때려박았습니다.">
+    <meta property="og:url" content="https://t3b08-gd-massage-real-1.vercel.app/info">
+    <meta name="robots" content="index, follow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #faf8f5;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            background: #1a1a1a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 3px solid #e8a87c;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav-logo {
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        .nav-logo span {
+            color: #e8a87c;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .nav-links a:hover {
+            color: #e8a87c;
+        }
+        .nav-cta {
+            background: #e8a87c;
+            color: #1a1a1a !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: 700 !important;
+            font-size: 0.9rem !important;
+            transition: background 0.2s;
+        }
+        .nav-cta:hover {
+            background: #d4946a;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: #fff;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background: #1a1a1a;
+            padding: 20px;
+            gap: 15px;
+            border-top: 1px solid #333;
+        }
+        .mobile-menu a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .mobile-menu.active {
+                display: flex;
+            }
+        }
+        .hero-info {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            border-bottom: 4px solid #e8a87c;
+        }
+        .hero-info h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+        }
+        .hero-info h1 span {
+            color: #e8a87c;
+        }
+        .hero-info p {
+            font-size: 1.2rem;
+            color: #bbb;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+        .hero-info .badge {
+            display: inline-block;
+            background: #e8a87c;
+            color: #1a1a1a;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 60px 0 30px;
+            letter-spacing: -0.5px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #e8a87c;
+            margin-top: 8px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .info-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-left: 4px solid #e8a87c;
+        }
+        .info-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 1rem;
+            color: #444;
+        }
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+        .info-card li strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        .price-table th {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .price-table td {
+            padding: 14px 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .price-table tr:last-child td {
+            border-bottom: none;
+        }
+        .price-table .highlight {
+            background: #fef6f0;
+            font-weight: 700;
+        }
+        .cta-section {
+            background: #1a1a1a;
+            padding: 60px 0;
+            text-align: center;
+            margin: 50px 0;
+            border-radius: 16px;
+        }
+        .cta-section h2 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .cta-section p {
+            color: #bbb;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #e8a87c;
+            color: #1a1a1a;
+            padding: 14px 40px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .cta-button:hover {
+            background: #d4946a;
+        }
+        .faq-section {
+            margin: 60px 0;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            padding: 20px 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            border-left: 3px solid #e8a87c;
+        }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        .faq-item p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #888;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+            border-top: 3px solid #e8a87c;
+        }
+        footer a {
+            color: #e8a87c;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-info h1 {
+                font-size: 2rem;
+            }
+            .price-table {
+                font-size: 0.9rem;
+            }
+            .price-table th, .price-table td {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">공덕<span>마사지</span></a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/review">후기</a></li>
+                <li><a href="/info" style="color:#e8a87c;font-weight:700;">정보</a></li>
+                <li><a href="/price">가격</a></li>
+                <li><a href="/location">위치</a></li>
+                <li><a href="tel:01062790862" class="nav-cta">010-6279-0862</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/">홈</a>
+            <a href="/review">후기</a>
+            <a href="/info" style="color:#e8a87c;font-weight:700;">정보</a>
+            <a href="/price">가격</a>
+            <a href="/location">위치</a>
+            <a href="tel:01062790862" style="color:#e8a87c;font-weight:700;">📞 전화하기</a>
+        </div>
+    </nav>
+
+    <section class="hero-info">
+        <div class="container">
+            <span class="badge">📋 내돈내산 정보</span>
+            <h1>공덕 마사지, <span>진짜 정보</span> 다 까발림</h1>
+            <p>광고 없음. 협찬 없음. 내 돈 내고 얻은 공덕 마사지의 모든 것 — 위치, 가격, 시간, 꿀팁까지 한 방에 정리.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">📍 기본 정보</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📌 위치 & 연락처</h3>
+                <ul>
+                    <li><strong>주소:</strong> 서울 마포구 공덕동 123-45 (공덕역 3번 출구 도보 3분)</li>
+                    <li><strong>전화:</strong> <a href="tel:01062790862" style="color:#e8a87c;font-weight:700;text-decoration:none;">010-6279-0862</a></li>
+                    <li><strong>주차:</strong> 건물 지하 주차장 (2시간 무료)</li>
+                    <li><strong>찾아오는 길:</strong> 공덕역 3번 출구에서 직진 후 첫 번째 골목 우회전</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>⏰ 운영 시간</h3>
+                <ul>
+                    <li><strong>월~금:</strong> 10:00 - 22:00 (마지막 접수 21:00)</li>
+                    <li><strong>토요일:</strong> 10:00 - 20:00</li>
+                    <li><strong>일요일:</strong> 12:00 - 18:00</li>
+                    <li><strong>공휴일:</strong> 변동 있음 (전화 확인 필수)</li>
+                    <li><strong>예약:</strong> 전화 또는 카카오톡 채널 '공덕마사지'</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title">💰 가격표 (2024년 기준)</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>코스</th>
+                    <th>시간</th>
+                    <th>가격</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>스웨디시 전신</strong></td>
+                    <td>60분</td>
+                    <td>70,000원</td>
+                    <td>기본 코스</td>
+                </tr>
+                <tr class="highlight">
+                    <td><strong>🔥 내돈내산 추천 코스</strong></td>
+                    <td>90분</td>
+                    <td>100,000원</td>
+                    <td>전신+발+스톤테라피</td>
+                </tr>
+                <tr>
+                    <td><strong>타이 마사지</strong></td>
+                    <td>60분</td>
+                    <td>75,000원</td>
+                    <td>스트레칭 위주</td>
+                </tr>
+                <tr>
+                    <td><strong>아로마 오일</strong></td>
+                    <td>80분</td>
+                    <td>90,000원</td>
+                    <td>향유 선택 가능</td>
+                </tr>
+                <tr>
+                    <td><strong>발 관리 (족욕+각질+마사지)</strong></td>
+                    <td>50분</td>
+                    <td>55,000원</td>
+                    <td>발만 집중</td>
+                </tr>
+                <tr>
+                    <td><strong>경락 마사지</strong></td>
+                    <td>60분</td>
+                    <td>80,000원</td>
+                    <td>라인 관리</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size:0.9rem;color:#888;margin-top:10px;">※ 가격은 변동될 수 있음. 방문 전 전화 확인 추천.</p>
+
+        <h2 class="section-title">🧠 내돈내산 꿀팁</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>✅ 예약 팁</h3>
+                <ul>
+                    <li>평일 오전/오후가 가장 한가함 (바로 예약 가능)</li>
+                    <li>주말은 최소 1~2일 전 예약 필수</li>
+                    <li>첫 방문 시 '90분 내돈내산 추천 코스' 강추</li>
+                    <li>전화 예약 시 "내돈내산 보고 왔어요" 하면 소소한 서비스</li>
+                </ul>
+            </div>
+            <div class="info-card">
+</body>
+</html>

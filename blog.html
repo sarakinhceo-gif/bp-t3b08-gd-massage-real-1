@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>공덕 마사지 내돈내산 블로그 | 찐 후기 & 솔직한 경험</title>
+    <meta name="description" content="공덕 마사지 내돈내산 블로그. 광고 없는 리얼 경험담, 스웨디시부터 건마까지 솔직한 후기와 팁을 공유합니다. 전화 010-6279-0862">
+    <meta name="keywords" content="공덕 마사지 블로그, 공덕 마사지 내돈내산 후기, 공덕 맛사지, 공덕 스웨디시, 공덕 건마, 마사지 추천">
+    <link rel="canonical" href="https://t3b08-gd-massage-real-1.vercel.app/blog">
+    <meta property="og:title" content="공덕 마사지 내돈내산 블로그 | 찐 후기">
+    <meta property="og:description" content="공덕 마사지 내돈내산 블로그. 광고 없는 리얼 경험담, 스웨디시부터 건마까지 솔직하게 까발립니다.">
+    <meta property="og:url" content="https://t3b08-gd-massage-real-1.vercel.app/blog">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #faf8f5;
+            color: #1a1a1a;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            border-bottom: 1px solid #e5e0d8;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #c0392b;
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #c0392b;
+        }
+        .nav-cta {
+            background: #c0392b;
+            color: #fff !important;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .nav-cta:hover {
+            background: #a93226;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: #1a1a1a;
+            border-radius: 3px;
+        }
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #e5e0d8;
+            padding: 20px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .mobile-menu a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 768px) {
+            .nav-links, .nav-cta {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .mobile-menu.active {
+                display: flex;
+            }
+        }
+        .blog-post {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .blog-post h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+        .blog-post .meta {
+            display: flex;
+            gap: 15px;
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e5e0d8;
+            padding-bottom: 20px;
+        }
+        .blog-post h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        .blog-post p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        .blog-post .highlight-box {
+            background: #fff;
+            border-left: 5px solid #c0392b;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .blog-post .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+        .blog-post ul {
+            margin: 20px 0 30px 20px;
+        }
+        .blog-post ul li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+        .blog-post .cta-button {
+            display: inline-block;
+            background: #c0392b;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 30px 0;
+            transition: background 0.3s;
+        }
+        .blog-post .cta-button:hover {
+            background: #a93226;
+        }
+        .blog-post .author-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 50px;
+            border: 1px solid #e5e0d8;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+        footer a {
+            color: #c0392b;
+            text-decoration: none;
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">공덕마사지</a>
+            <div class="nav-links">
+                <a href="/">홈</a>
+                <a href="/blog">블로그</a>
+                <a href="/review">후기</a>
+                <a href="/faq">FAQ</a>
+            </div>
+            <a href="tel:01062790862" class="nav-cta">010-6279-0862</a>
+            <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="/">홈</a>
+            <a href="/blog">블로그</a>
+            <a href="/review">후기</a>
+            <a href="/faq">FAQ</a>
+            <a href="tel:01062790862">전화 문의</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <article class="blog-post">
+            <h1>공덕 마사지 내돈내산 찐 후기: "광고 다 거르고, 이새끼만 기억해"</h1>
+            <div class="meta">
+                <span>2025.03.15</span>
+                <span>by 찐후기러</span>
+                <span>조회 3,482</span>
+            </div>
+
+            <p>야, 형들. 오늘은 진짜 솔직하게 까발린다. 공덕 마사지 내돈내산 후기다. 인터넷에 쳐보면 광고 덩어리만 잔뜩이지? "1등 마사지", "베스트 케어" 이런 거 다 개소리다. 내가 3년 동안 공덕에서 20군데 넘게 돌아다니면서 진짜 돈 내고 경험한 것만 쓴다. 스웨디시, 건마, 아로마, 타이 다 해봤다. 이 글 하나면 너가 돈 낭비할 일은 없다.</p>
+
+            <div class="highlight-box">
+                <p>💥 결론부터 말한다: 공덕 마사지 고를 때는 <strong>위치랑 가격에 속지 마라</strong>. 진짜 실력은 관리사 손끝에서 나온다. 내가 보증한다.</p>
+            </div>
+
+            <h2>왜 공덕 마사지가 핫한데? 솔직히 말해줌</h2>
+            <p>공덕역 주변은 마사지샵이 미친 듯이 많다. 역에서 5분 거리 안에만 10곳은 넘는다. 근데 문제는 대부분이 광고로만 유명하지, 실제로 가보면 별로라는 거다. 내가 느낀 공덕 마사지의 현실을 말해준다.</p>
+            <ul>
+                <li><strong>스웨디시:</strong> 60분에 8만 원~12만 원. 근데 저가 업소는 오일도 싸구려 쓰고, 관리사 숙련도 떨어짐.</li>
+                <li><strong>건마:</strong> 50분 7만 원대. 시원하긴 한데, 너무 빡세게 하면 다음날 근육통 온다. 적당한 게 중요함.</li>
+                <li><strong>아로마:</strong> 90분 15만 원 이상. 분위기 좋은데, 돈 값 하려면 관리사 실력이 진짜 중요함.</li>
+            </ul>
+            <p>내가 본 공덕 마사지의 진짜 문제는 <strong>"가격 대비 퀄리티 차이"</strong>다. 비싸다고 좋은 게 아니다. 내돈내산으로 확인한 결과, 홍보에 목숨 건 곳보다는 입소문으로 유지되는 곳이 낫더라.</p>
+
+            <h2>내돈내산 1순위: "이곳은 진짜 다르다"</h2>
+            <p>내가 3년 동안 공덕에서 마사지 받으면서 <strong>단연코 최고</strong>라고 느낀 곳을 딱 하나 꼽자면, <strong>공덕동에 있는 '리얼테라피'</strong>다. (광고 아니다, 내돈내산임.) 여기는 관리사가 10년 차 이상이고, 손맛이 진짜 장난 아니다. 특히 스웨디시 받을 때 압이 깊으면서도 부드럽게 풀어주는 게 미쳤다. 가격은 60분에 10만 원으로 중간 정도인데, 퀄리티는 15만 원짜리 부럽지 않음.</p>
+            <p>여기서 중요한 팁: <strong>예약할 때 "찐후기 보고 왔다"고 말하면</strong> 관리사가 더 신경 써준다. 내가 몇 번 해봤는데, 서비스가 달라진다. ㅇㅈ?</p>
+
+            <div class="highlight-box">
+                <p>📞 전화 예약: <a href="tel:01062790862" style="color:#c0392b; font-weight:700;">010-6279-0862</a> (리얼테라피 직통번호, 내가 확인함)</p>
+            </div>
+
+            <h2>공덕 마사지에서 피해야 할 함정 3가지</h2>
+            <p>내가 당한 경험으로 써준다. 이거만 기억해도 돈 아낀다.</p>
+            <ul>
+                <li><strong>함정 1: "신규 오픈 50% 할인"</strong> - 개나소나 한다. 가보면 관리사가 알바 수준이고, 시설만 깔끔하지 서비스는 별로다.</li>
+                <li><strong>함정 2: "후기 이벤트 참여 시 할인"</strong> - 이거 걸려들면 너도 광고 노예가 된다. 진짜 후기 쓰는 척하지만, 실제로는 업소에서 조작한 거다.</li>
+                <li><strong>함정 3: "외국인 관리사 전문"</strong> - 언어 문제로 커뮤니케이션 안 되고, 기술도 제각각이다. 차라리 한국인 관리사 있는 곳이 낫다.</li>
+            </ul>
+            <p>이 세 가지 거르면 공덕 마사지 실패 확률이 70%는 줄어든다. 나머지 30%는 네가 예약할 때 잘 물어보는 거다.</p>
+
+            <h2>진짜 후기: 공덕 마사지 추천 리스트</h2>
+            <p>내가 직접 돈 내고 가본 곳 중에서 <strong>재방문 의사 100%</strong>인 곳만 추려봤다. 각각 특징이 다르니까 니 취향에 맞게 골라라.</p>
+            <ul>
+                <li><strong>리얼테라피</strong> (공덕동 4번 출구 3분) - 스웨디시 최강. 가격 10만 원~. 조용한 분위기에서 집중 케어 원하면 여기.</li>
+                <li><strong>공덕힐링샵</strong> (공덕역 2번 출구 5분) - 건마 전문. 시원하게 풀어주는 걸 원하면 추천. 7만 원.</li>
+                <li><strong>아로마플레이스</strong> (공덕오거리 7분) - 아로마 마사지. 데이트 코스로도 좋음. 90분 15만 원.</li>
+            </ul>
+            <p>참고로, <strong>리얼테라피는 예약이 빡빡하다</strong>. 최소 2~3일 전에 전화해야 원하는 시간대 잡힌다. 내가 알려준 번호로 미리 연락해라.</p>
+
+            <div class="highlight-box">
+                <p>🔥 공덕 마사지 진짜 원한다면, 지금 당장 전화해라. <a href="tel:01062790862" style="color:#c0392b; font-weight:700;">010-6279-0862</a> (내돈내산 인증)</p>
+            </div>
+
+            <h2>마무리: 광고에 속지 마라, 내돈내산이 진리다</h2>
+            <p>이 글은 내가 3년 동안 공덕에서 마사지 받으면서 느낀 진짜 경험이다. 블로그에 써있는 허황된 광고 문구랑은 다르다. "내돈내산"이라는 말이 왜 중요한지 알겠지? 진짜 돈 내고 받은 서비스만큼 솔직한 건 없다. 니가 이 글을 봤다면, 최소한 함정에 빠지지는 않을 거다.</p>
+            <p>마지막으로 한마디 더: <strong>마사지는 가격보다 관리사가 90%다.</strong> 공덕에서 좋은 관리사 만나고 싶으면, 내가 추천한 곳부터 가봐라. 후회 안 한다. ㅅㄱ.</p>
+
+            <a href="tel:01062790862" class="cta-button">📞 전화로 예약하기 (010-6279-0862)</a>
+
+            <div class="author-box">
+                <p><strong>찐후기러</strong> - 공덕 거주 5년차, 마사지 마니아. 3년간 20곳
+</body>
+</html>
